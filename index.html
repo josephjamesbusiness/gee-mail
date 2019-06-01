@@ -8,13 +8,112 @@
 			//var gmails; 
 			console.log(geemails)
 			// ALL OF YOUR JAVASCRIPT CODE SHOULD GO HERE. 
+			var main = document.getElementById("main")
+
+
 
 			for (var i = 0; i<geemails.length; i++) {
 
-var wrapper = document.createElement('div');
-wrapper.className= 'bigBox';
-wrapper.innerHTML = geemails[i].subject;
-document.body.appendChild(wrapper);
+				var row = document.createElement('div');
+				var sender = document.createElement('span');
+				var subject = document.createElement('span');
+				var date = document.createElement('span');
+				var body = document.captureEvents('span')
+
+
+
+				//sender.className= 'bigBox';
+				subject.innerHTML = geemails[i.subject]
+				sender.innerHTML = geemails[i].sender;
+				date.innerHTML = geemails[i].date;
+				
+				
+				row.appendChild(sender);
+				row.appendChild(date);
+
+
+				var divSubject = document.createElement('span');
+				divSubject.innerHTML = geemails[i].subject;
+				row.appendChild(divSubject);
+				main.appendChild(row);
+
+				var body = document.createElement('p');
+				body.className = 'body';
+				body.innerHTML = geemails[i].body;
+				// body.addEventListener('click', showBody)
+				main.appendChild(body);
+
+									//   var placeBox = document.createElement('div');
+									//   placeBox.className = 'restaurant';
+									//   placeBox.innerHTML = desserts[i].place;
+									//   placeBox.addEventListener('click', showFood)
+									//   wrapper.appendChild(placeBox);
+
+								// function showBody(){
+ 								//  var body = this.querySelector('.body');
+  							// 	if(emailBody.style.display === 'block'){
+    						// 	emailBody.style.display = 'none'
+ 								//  }else{
+    						// 	emailBody.style.display = 'block'
+ 								// 	 }
+
+
+//var newContentButton = document.createElement('div');
+					//newContentButton.className = 'newContent';
+					//newContentButton.innerHTML = 'Show';
+					//newContentButton.addEventListener('click', showHide2)
+					//document.body.appendChild(newContentButton);
+
+					//let contentButton = document.getElementsByClassName('content')
+					//for(i=0;i<inbox.length;i++){
+					//contentButton[i].addEventListener('click', showHide);
+
+
+
+
+			}
+
+			
+// count.innerHTML = desserts.length;
+
+// desserts.push({place: 'safeway', item: 'carrot cake', price: 6})
+
+// for(var i = 0; i<desserts.length; i++){
+
+  
+//   var wrapper = document.createElement('div');
+//   wrapper.className = 'bigBox';
+//   list.appendChild(wrapper)
+ 
+//   var placeBox = document.createElement('div');
+//   placeBox.className = 'restaurant';
+//   placeBox.innerHTML = desserts[i].place;
+//   placeBox.addEventListener('click', showFood)
+//   wrapper.appendChild(placeBox);
+  
+//   var itemBox = document.createElement('p');
+//   itemBox.className = 'food';
+//   itemBox.innerHTML = desserts[i].item;
+//   placeBox.appendChild(itemBox);
+  
+//   var priceBox = document.createElement('p');
+//   priceBox.className = 'price';
+//   priceBox.innerHTML = desserts[i].price;
+//   placeBox.appendChild(priceBox);
+  
+// }
+
+// function showFood(){
+//   var foodStuff = this.querySelector('.food');
+//   if(foodStuff.style.display === 'block'){
+//     foodStuff.style.display = 'none'
+//   }else{
+//     foodStuff.style.display = 'block'
+//   }
+// }
+
+
+
 
 }
 
@@ -31,14 +130,15 @@ document.body.appendChild(wrapper);
 
 			// We have to use window.onload so your JavaScript doesn't execute until the page has loaded and all HTML has been downloaded to your browser
 
-		};
+	
 	</script>
 </head>
 
 <body>
+		<h1>Welcome Captain Reynolds!</h1>
+		<h2>Shiny!</h2>
 	<div class="container" id="main">
 	</div>
 </body>
-<h1>Aloha world!</h1>
-<h2>thursday</h2>
+
 </html>
